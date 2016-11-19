@@ -1,7 +1,11 @@
 <?php
 
-// backup_tables('DB_HOST', 'DB_USERNAME', 'DB_PASSWORD', 'DB_NAME');
-backup_tables('localhost', 'root', '', 'butterfly');
+$DB_HOST = '';
+$DB_USERNAME = '';
+$DB_PASSWORD ='';
+$DB_NAME = '';
+
+backup_tables($DB_HOST, $DB_USERNAME, $DB_PASSWORD, $DB_NAME);
 
 /* backup the db OR just a table */
 function backup_tables($host, $user, $pass, $name, $tables = '*')
